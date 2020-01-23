@@ -1,0 +1,8 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: hosoden/hello-world:1.0
+    steps:
+      - checkout
+      - run: docker build -t hosoden/hello-world:1.0 .
