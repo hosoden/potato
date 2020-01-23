@@ -1,4 +1,4 @@
-version: 2
+version: 1
 jobs:
   build:
     docker:
@@ -6,3 +6,9 @@ jobs:
     steps:
       - checkout
       - run: docker build -t hosoden/hello-world:1.0 .
+workflow:
+  version: 1
+  build:
+    jobs:
+      - build
+
