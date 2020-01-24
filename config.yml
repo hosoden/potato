@@ -1,15 +1,8 @@
-version: 2
+version: 1.0
 jobs:
   build:
-    docker:
-      - image: hosoden/hello-world:1.0
+    docker: 
+      - image: hosoden/hello-world:1.0 # the primary container, where your job's commands are run
     steps:
-      - checkout
-      - setup_remote_docker
-      - run: docker build -t hosoden/hello-world:1.0 .
-workflow:
-  version: 1
-  build:
-    jobs:
-      - build
-
+      - checkout # check out the code in the project directory
+      - run: echo "hello world" # run the `echo` command
