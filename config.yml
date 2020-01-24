@@ -1,10 +1,11 @@
-version: 1
+version: 2
 jobs:
   build:
     docker:
       - image: hosoden/hello-world:1.0
     steps:
       - checkout
+      - setup_remote_docker
       - run: docker build -t hosoden/hello-world:1.0 .
 workflow:
   version: 1
