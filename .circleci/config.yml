@@ -6,8 +6,9 @@ jobs:
     working_directory: /go/src/github.com/hosoden/hello-world
     steps:
       - checkout # check out the code in the project directory
-      - setup_remote_docker
+      - setup_remote_docker:
           docker_layer_caching: true
+
       - run:
           name: Install Docker client
           command: |
