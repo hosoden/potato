@@ -6,4 +6,4 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       # - run: echo "hello world" # run the `echo` command
-      - run: ocker build -t hosoden/hello-world:latest .
+      - run: docker build -t hosoden/hello-world:latest .
