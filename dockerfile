@@ -18,4 +18,4 @@ ENV NAME World
 
 # コンテナが起動したときに実行される命令を指定する
 # ここでは後述の ｢app.py ｣を実行するよう指示している
-CMD ["python", "app.py"]
+CMD ["python", "server.py"]
