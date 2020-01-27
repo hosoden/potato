@@ -11,10 +11,10 @@ ADD . /app
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
 # Docker に対して｢ 80 番ポート ｣で待受けするよう指定する
-EXPOSE 80
+EXPOSE 55555
 
 # Docker イメージ中の環境変数を指定する
-ENV NAME World
+ENV NAME imageshow
 
 # コンテナが起動したときに実行される命令を指定する
 # ここでは後述の ｢app.py ｣を実行するよう指示している
