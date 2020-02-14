@@ -2,7 +2,7 @@ version: 1.0
 jobs:
   build:
     docker: 
-      - image: hosoden/hello-world:latest # the primary container, where your job's commands are run
+      - image: hosoden/hello-world:0.1.21 # the primary container, where your job's commands are run
     working_directory: /go/src/github.com/hosoden/hello-world
     steps:
       - checkout # check out the code in the project directory
